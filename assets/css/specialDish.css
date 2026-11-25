@@ -1,0 +1,80 @@
+#specialDish 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    background-image: url('../images_delici/images/bg.png');
+    background-color: var(--list-color);
+    position: relative;
+
+}
+#specialDish .container-fluid
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+#specialDish .container-fluid .part1 img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#specialDish .container-fluid .part2 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    position: relative;
+
+}
+#specialDish .container-fluid .part2 .item 
+{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    position: relative;
+}
+#specialDish .container-fluid .part2 .badgeMark 
+{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation:  move-block-down 2s linear infinite alternate;
+}
+
+#specialDish .container-fluid .part2 h2  
+{
+   font-size: 50px;
+}
+#specialDish .container-fluid .part2 .content .main 
+{
+    text-align: justify;
+}
+#specialDish .container-fluid .part2 .content .price 
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+#specialDish .container-fluid .part2 .content .price p:nth-of-type(2)
+{
+    color: var(--main-color);
+}
+#specialDish .container-fluid .part2 .content .mainButton 
+{
+    margin-inline-start: 0;
+    margin-inline-end: auto;
+}

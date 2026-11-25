@@ -1,0 +1,113 @@
+#Story 
+{
+    background-color: rgb(23, 24, 25);
+}
+#Story .container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Story .container .row 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Story .container .part 
+{
+    padding-block: 40px;
+}
+#Story .container .item 
+{
+    width: 100%;
+}
+#Story .container .title h4 
+{
+    color: var(--main-color);
+}
+#Story .container .body h2 
+{
+    font-size: 50px;
+
+}
+#Story .container .body h6 
+{
+    font-weight: bold;
+    font-size: 20px;
+} 
+#Story .container .body p:nth-of-type(1)
+{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#Story .container .body p:nth-of-type(2) 
+{
+    color: var(--main-color);
+    font-size: 25px;
+    letter-spacing: 1px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#Story .container .part2 .item 
+{
+    position: relative;
+}
+
+#Story .container .part2 .item .top-image 
+{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -40px;
+    right: -5px;
+
+}
+#Story .container .part2 .item .top-image::before 
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images_delici/images/badge-1-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -5px;
+    animation: infinity-rotate 6s linear infinite forwards;
+}
+#Story .container .part2 .item .main-image
+{
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+#Story .container .part2 .item .bottom-image {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 10px;
+    left: -12px;
+    z-index: 2;
+}
+#Story .container .part2 .item .bottom-image::before {
+    content: "";
+    display: block;
+    background-image: url(../images_delici/images/pattern-8.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    transform: translateY(-10%);
+    transition-duration: 0.6s;
+    z-index: -1;
+}
+
+
+

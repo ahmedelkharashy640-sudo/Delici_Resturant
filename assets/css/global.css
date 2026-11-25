@@ -1,0 +1,411 @@
+:root 
+{
+    --main-color:rgb(228, 197, 144);
+    --white-color:rgb(255,255,255);
+    --layout-color:rgba(228, 197, 144, 0.5);
+    --list-color:rgb(14, 13, 12);
+    --bs-body-color: rgb(33, 37, 41);
+    --bs-body-bg: #fff;
+    --bs-menu-bg:rgb(23, 24, 25);
+}
+h1,h2,h3,h4,h5,h6 
+{
+    font-family: Forum;
+}
+
+body 
+{
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "DM Sans", sans-serif;
+}
+.mainParagraph 
+{
+    color: #A7A7A7;
+}
+.double-underline 
+{
+    position: relative;
+    color: var(--white-color);
+}
+.double-underline::before,
+.double-underline::after 
+{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-duration: .5s;
+} 
+.double-underline.active::before,
+.double-underline.active::after
+{
+    width: 100%;
+}
+.double-underline::after 
+{
+    bottom: -3px;
+}
+.double-underline:hover::before,
+.double-underline:hover::after
+{
+     width: 100%;
+}
+.container-fluid .title h6, 
+.container .title h6 
+ {
+    font-size: 18px;
+    color: var(--main-color);
+ }
+.container-fluid .title img,
+.container .title img
+{
+    width: 100px;
+}
+.mainButton 
+{
+    color: var(--main-color);
+    width: 210px;
+    height: 55px;
+    border: 2px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 15px;
+    letter-spacing: .5px;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.6s;
+}
+.mainButton::after,
+.mainButton::before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    transition-duration: 1s;
+    transition-property: all;
+    z-index: 2;
+
+}
+.mainButton::before 
+{
+    transform: translateY(-100%);
+}
+.mainButton::after 
+{
+    transform: translateY(100%);
+}
+.mainButton:hover::before,
+.mainButton:hover::after 
+{
+    transform: translateY(0);
+}
+.mainButton:hover span 
+{
+    z-index: 3;
+    color: rgb(0, 0, 0);
+}
+.vertical-row 
+{
+    width: 1px;
+    background-color: var(--white-color);
+    opacity: 0.5;
+    height: 100px;
+    position: absolute;
+    top: 0;
+   left: 50%;
+}
+::selection 
+{
+    background-color: var(--main-color);
+    color: black;
+}
+.scroll-progress
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: transparent;
+    z-index: 100;
+
+    .scroll-progress-bar 
+    {
+        width: 0%;
+        height: 100%;
+        background-color: var(--main-color);
+        border-radius: 5px;
+        transition: width 0.1s linear;
+    }
+    
+}
+::-webkit-scrollbar 
+{
+    width: 12px;
+}
+::-webkit-scrollbar-track  
+{
+    background-color: #2C2C2C;
+}
+::-webkit-scrollbar-thumb 
+{
+    background: var(--main-color);
+    border-radius: 20px;
+    
+}
+.popup
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.popup[data-popup-name="Menu"] 
+{
+    background-color: rgba(228, 197, 144,0.3);
+
+}
+.popup.active 
+{
+    display: flex;
+}
+.popup .box 
+{
+    max-width: 550px;
+    padding: 20px 25px;
+    background-color: var(--list-color);
+    position: relative;
+    transform: translateY(-100%);
+    transition-duration: 0.5s;
+    transition-property: all;
+
+}
+.popup.show .box
+{
+    transform: translateY(0%);
+}
+.popup .box .title 
+{
+    text-align: center;
+}
+.popup .box .title i 
+{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 25px;
+    height: 25px;
+    color: var(--white-color);
+    cursor: pointer;
+
+}
+.popup[data-popup-name="Menu"] .box .title i 
+{
+    color: var(--main-color);
+}
+.popup .box .title h6 
+{
+    color: var(--main-color);
+}
+.popup .box .title img 
+{
+    max-width: 100px;
+    
+}
+.popup[data-popup-name="Menu"] .box .title h2 
+{
+    color: var(--white-color);
+    font-size: 40px;
+    font-weight: 500;
+}
+.popup[data-popup-name="Menu"] .box .body .image 
+{
+    position: relative;
+    overflow: hidden;
+    max-width: 500px;
+
+}
+.popup[data-popup-name="Menu"] .box .body .price 
+{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 100px;
+    height: 40px;
+    background-color: var(--list-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    transform: translateX(10%);
+}
+.popup[data-popup-name="Menu"] .box .body img
+{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.popup[data-popup-name="Menu"] .box .body p 
+{
+    color: #A7A7A7;
+    text-align: start;
+}
+#popupItems 
+{
+    position: relative;
+}
+
+#popupItems button.move
+{
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--main-color);
+    transform: translateY(-100%) rotate(45deg);
+    transition: background-color 0.5s ease;
+
+   z-index: 500;
+   background-color: var(--list-color);
+   opacity: 1;
+   border-radius: 10px;
+}
+
+#popupItems .carousel-control-prev
+{
+       left: 70px;
+       transform: rotate(-45deg);
+}
+#popupItems .carousel-control-next
+{
+     right: 70px;
+     transform: rotate(45deg);
+}
+
+
+
+#popupItems .carousel-control-prev i ,
+#popupItems .carousel-control-next i 
+{
+    transform: rotate(-45deg);
+}
+.popup[data-popup-name="Book"] 
+{
+    background-color: rgba(228, 197, 144,0.3);
+    transition: background 0.2s ease-in-out;
+}
+.popup[data-popup-name="Book"] .box 
+{
+    max-width: 550px;
+    margin: auto;
+    background-color: var(--bs-menu-bg);
+    color: #A7A7A7;
+    transform: translateY(-120%);
+    transition-duration: 0.5s;
+    transition-property: all;
+    
+}
+.popup.popup[data-popup-name="Book"].show .box
+{
+    transform: translateY(0%);
+}
+.popup[data-popup-name="Book"] .box .title 
+{
+    position: relative;
+}
+.popup[data-popup-name="Book"] .box .title h2 
+{
+color: var(--white-color);
+ font-size: 40px;
+}
+.popup[data-popup-name="Book"] .box .title i
+{
+    color: var(--main-color);
+}
+.popup[data-popup-name="Book"] .box .part1 p 
+{
+    width: 73%;
+    margin: auto;
+    text-align: center;
+
+}
+.popup[data-popup-name="Book"] .box .part1 p span 
+{
+    color: var(--main-color);
+}
+.popup[data-popup-name="Book"] .box form 
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: transparent;
+}
+.popup[data-popup-name="Book"] .box form .box
+{
+    width: 50%;
+    padding: 5px 10px;
+}
+.popup[data-popup-name="Book"] .box form input,
+.popup[data-popup-name="Book"] .box form textarea 
+{
+    background-color: transparent;
+    padding: 10px 20px;
+    color: var(--white-color);
+    box-shadow: none;
+}
+.popup[data-popup-name="Book"] .box form .box p.alert 
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translate(0%, -5%);
+}
+.popup[data-popup-name="Book"] .box form .box p[data-error-name="datetime-local"]
+{
+    font-size: 10px;
+    transform: translate(-5%, -5%);
+
+}
+.form-control:focus 
+{
+    border-color:var(--white-color);
+}
+.popup[data-popup-name="Book"] .box form input::placeholder,
+.popup[data-popup-name="Book"] .box form input[name="datetime-local"],
+.popup[data-popup-name="Book"] .box form input[name="seats"],
+.popup[data-popup-name="Book"] .box form textarea::placeholder 
+{
+  color: #A7A7A7;
+  background-color: transparent;
+}
+.popup[data-popup-name="Book"] .box form textarea 
+{
+    width: 95%;
+    height:150px;
+    resize: none;
+    margin: auto;
+}
+

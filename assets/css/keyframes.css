@@ -1,0 +1,57 @@
+@keyframes infinity-rotate {
+    0% 
+    {
+        transform: rotate(0);
+    }
+    25% 
+    {
+        transform: rotate(90deg);
+    }
+    50% 
+    {
+        transform: rotate(180deg);
+    }
+    100% 
+    {
+        transform: rotate(360deg);
+    }
+}
+@keyframes span-moving {
+    0% 
+    {
+        width: 60%;
+    }
+  
+    50% 
+    {
+        width: 20%;
+    }
+    100% 
+    {
+        width: 60%;
+    }
+}
+
+@keyframes move-block-up {
+    from  
+    {
+        transform: translateY(0);
+    }
+    to 
+    {
+        transform: translateY(30px);
+    }
+   
+
+}
+@keyframes move-block-down 
+{
+    from 
+    {
+        transform: translateY(0);
+    }
+    to 
+    {
+        transform: translateY(-30px);
+    }
+}

@@ -1,0 +1,534 @@
+  /* Home Section --> (navbar)  */
+nav.navbar 
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition-duration: 0.5s;
+}
+nav.navbar.scrolled 
+{
+    background: linear-gradient(
+        110deg,
+        #30291f 0%,
+        #211e1a 38%,
+        #111111 75%,
+        #292116 100%
+    );
+
+    border-bottom: 1px solid rgba(212, 175, 120, 0.2);
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+} 
+nav.navbar.hide 
+{
+    transform: translateY(-100%);
+}
+.navbar .nav-link 
+{
+    position: relative;
+    color: var(--white-color);
+}
+.navbar .nav-link:hover 
+{
+      color: var(--main-color);
+
+}
+.navbar .nav-link.active 
+{
+    color: var(--main-color);
+}
+.navbar .nav-link.active::before,
+.navbar .nav-link.active::after
+{
+    width: 100%;
+}
+.navbar .nav-link::before, 
+.navbar .nav-link::after 
+{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-duration: .5s;
+}
+.navbar .nav-link::after 
+{
+    bottom: -3px;
+}
+.navbar .nav-link:hover::before, 
+.navbar .nav-link:hover::after 
+{
+  width: 100%;
+}
+ /* offcanvas  */
+  .offcanvas 
+  {
+    display: block;
+  }
+ #offcanvas .btn 
+ {
+    position: fixed;
+    top: 15px;
+    right: 15%;
+    z-index: 100;
+
+ }
+ .burger 
+ {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 47px;
+    height: 37px;
+    padding: 2px;
+    transition-duration: 0.5s;
+
+ }
+ .burger.hide 
+ {
+    transform: translateY(-100px);
+ }
+.burger span 
+{
+    display: block;
+    background-color: var(--white-color);
+    height: 2px;
+    width: 60%;
+    margin-right: auto;
+
+}
+.burger span:nth-of-type(1){
+
+    animation: span-moving 0.6s  linear  infinite alternate;
+}
+.burger span:nth-of-type(2){
+    animation: span-moving 0.6s 0.15s linear  infinite alternate;
+}
+.burger span:nth-of-type(3){
+    animation: span-moving 0.6s 0.3s linear  infinite alternate;
+}
+.offcanvas.offcanvas-start 
+{
+    background: var(--list-color);
+    width: 400px;
+    height: 100vh;
+    background-image: url('../images_delici/images/bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.offcanvas-header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.offcanvas-header i 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+.offcanvas-backdrop.show 
+{
+    background: var(--layout-color);
+
+}
+.offcanvas-body .part .item hr 
+{
+    background: #c7c4c4;
+    height: 3px;
+    width:200px;
+    margin-block: 10px;
+}
+.offcanvas-body .part1 .item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 25px;
+} 
+.offcanvas-body .part1 .item img:nth-of-type(2) 
+{
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+.offcanvas-body .secondary .item ul 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.offcanvas-body .secondary .item ul li a 
+{
+    position: relative;
+    text-decoration: none;
+    color: var(--white-color);
+    list-style: none;
+}
+.offcanvas-body .secondary .item ul li a:hover, 
+.offcanvas-body .secondary .item ul li a.active 
+{
+    color: var(--main-color);
+
+} 
+
+.offcanvas-body .secondary .item ul li a::before 
+{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--main-color);
+    animation: infinity-rotate 5s linear infinite;
+    position: absolute;
+    top: 25%;
+    left: -20px;
+    opacity: 0;
+
+}
+.offcanvas-body .secondary .item ul li a.active::before
+{
+    opacity: 1;
+}
+.offcanvas-body .secondary .item ul li a:hover::before  
+{
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+
+.offcanvas-body .part3 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offcanvas-body .part3 .item 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.offcanvas-body .part3 .item h2 
+{
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+}
+.offcanvas-body .part3 .item .part 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    margin-bottom: 10px;
+} 
+.offcanvas-body .part3 .item .part i, 
+.offcanvas-body .part3 .item .part p 
+{
+    color: #9C9C9C;
+}
+.offcanvas-body .part3 .item span::before 
+{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--main-color);
+    animation: infinity-rotate 5s linear infinite;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+.offcanvas-body .part3 .item .num 
+{
+  color: var(--main-color);
+  position: relative;
+  font-size: 30px;
+
+}
+.offcanvas-body .part3 .item .num::before, 
+.offcanvas-body .part3 .item .num::after 
+{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-duration: .5s;
+
+} 
+.offcanvas-body .part3 .item .num::after 
+{
+    bottom: -3px;
+}
+.offcanvas-body .part3 .item .num:hover::before, 
+.offcanvas-body .part3 .item .num:hover::after
+{
+    width: 100%;
+}
+
+/* Home Section  */
+.carousel-indicators 
+{
+    column-gap: 12px;
+    right:  20px;
+    left: auto;
+    margin: auto;
+    bottom: 30px;
+
+}
+#Home .carousel-indicators button[data-bs-target]  
+{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: var(--white-color);
+    opacity: 1;
+
+}
+#Home .carousel-indicators button[data-bs-target].active  
+{
+   background-color: var(--main-color);
+   width:70px;
+   border-radius: 15px;
+
+}
+#Home .carousel-inner .carousel-item 
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+    
+    
+}
+header .carousel-inner .carousel-item:nth-of-type(1) 
+{
+  background-image: url('../images_delici/images/slider-1.jpg');
+}
+header .carousel-inner .carousel-item:nth-of-type(2) 
+{
+  background-image: url('../images_delici/images/slider-2.jpg');
+}
+header .carousel-inner .carousel-item:nth-of-type(3) 
+{
+  background-image: url('../images_delici/images/slider-3.jpg');
+}
+ #Home .carousel-item .container 
+ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ #Home .carousel-item .container .title 
+  {
+    opacity: 0;
+    transform: translateY(40px);
+    transition-duration: 0.6s;
+  }
+#Home .carousel-item.active .container .title 
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+#Home .carousel-item .container .title h6 
+ {
+    font-size: 18px;
+    color: var(--main-color);
+ }
+#Home .carousel-item .container .title img 
+{
+    width: 50%;
+}
+#Home .carousel-item .container .content h2, 
+#Home .carousel-item .container .content h3 
+{
+    font-size: 80px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition-duration: 0.6s;
+    transition-delay: 0.4s;
+}
+#Home .carousel-item.active .container .content h2, 
+#Home .carousel-item.active .container .content h3 
+{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+#Home .carousel-item .container .content p 
+{
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition-duration: 0.6s;
+    transition-delay: 1s;
+}
+#Home .carousel-item.active .container .content p 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+#Home .carousel-item .container .content a 
+{
+    color: var(--main-color);
+    width: 210px;
+    height: 55px;
+    border: 2px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 15px;
+    letter-spacing: .5px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(40px);
+    transition-duration: 0.6s;
+    transition-delay: 1.2s;
+    transition-property: all;
+}
+#Home .carousel-item.active .container .content a 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+#Home .carousel-item .container .content a::before, 
+#Home .carousel-item .container .content a::after 
+{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+     transition-duration: 1s;
+    transition-property: all;
+   z-index: 2;
+
+}
+#Home .carousel-item .container .content a::before 
+{
+    transform: translateY(-100%);
+}
+#Home .carousel-item .container .content a::after
+{
+    transform: translateY(100%);
+}
+#Home .carousel-item .container .content a:hover::before, 
+#Home .carousel-item .container .content a:hover::after 
+{
+    transform: translateY(0);
+}
+#Home .carousel-item .container .content a:hover span 
+{
+    z-index: 3;
+    color: rgb(0, 0, 0);
+}
+#carouselExampleIndicators 
+{
+    position: relative;
+}
+#carouselExampleIndicators button.move
+{
+    position: absolute;
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--main-color);
+   transition-duration: 0.5s;
+   transition-property: all;
+   z-index: 1;
+}
+#carouselExampleIndicators button.move:hover 
+{
+    background-color: var(--main-color);
+}
+#carouselExampleIndicators .carousel-control-prev
+{
+       left: 40px;
+       transform: rotate(-45deg);
+}
+#carouselExampleIndicators .carousel-control-next
+{
+     right: 40px;
+     transform: rotate(45deg);
+}
+#carouselExampleIndicators button.move i 
+{
+    color: var(--main-color);
+}
+#carouselExampleIndicators button.move:hover i 
+{
+    color: rgb(0, 0, 0);
+}
+
+#carouselExampleIndicators .carousel-control-prev i 
+{
+    transform: rotate(45deg);
+}
+#carouselExampleIndicators .carousel-control-next i 
+{
+    transform: rotate(-45deg);
+}
+.booking  
+{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    
+}
+.booking::before 
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--main-color);
+    position: absolute;
+    animation: infinity-rotate 7s linear infinite;
+   
+}
+.booking img 
+{
+    width: 40px;
+    margin-bottom: 8px;
+}
+.booking p 
+{
+    font-size: 12px;
+}

@@ -1,0 +1,434 @@
+/*350*/
+@media (max-width: 1300px) {
+    .navbar-brand img
+    {
+            width: 125px;
+            padding-top: 5px;
+    }
+  #offcanvas .btn {
+    right: 0%;
+    }
+    .offcanvas.offcanvas-start {
+
+    width: 300px;
+    
+    }
+    .carousel-item .container .title img {
+    width: 35%;
+    }
+    .carousel-item .container .title h6 {
+    font-weight: lighter;
+    letter-spacing: 1px;
+    }
+    .carousel-item .container .content h2 
+    {
+        margin-bottom: 0;
+    }
+    .carousel-item .container .content h2, .carousel-item .container .content h3 {
+    font-size: 30px;
+    }
+    
+    .carousel-indicators {
+    column-gap: 0px;
+    }
+    .carousel-item .container .content p {
+
+    font-size: 13px;
+    margin-bottom: 40px;
+    }
+    .carousel-item .container .content a {
+
+    width: 170px;
+    height: 50px;
+    font-size: 14px;
+    }
+    .booking {
+    bottom: 30px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    }
+    .booking img {
+    width: 30px;
+    height: 30px;
+    }
+    .booking p {
+    font-size: 10px;
+    }
+    #carouselExampleIndicators button.move {
+
+    display: none;
+    }
+
+
+  /* About Section  */
+  .container .content .head h2 {
+    font-size: 35px;
+   }
+ .container .content .head p {
+    width: 80%;
+    margin: 0px 20px auto;
+    }
+
+    .container .content .row .part1 {
+    transform: translateY(35px);
+    }
+    .container .content .row .part3 
+    {
+        transform: translateY(45px);
+    }
+    /* Story Section  */
+
+    #Story .container .body h2 {
+    font-size: 30px;
+    }
+    #Story .container .body p:nth-of-type(1) {
+    font-size: 14px;
+    width: 95%;
+    }
+    #Story .container .part2 
+    {
+        padding-block: 40px;
+    }
+    #Story .container .part2 .item .top-image {
+    width: 95px;
+    height: 100px;
+    right: 15px;
+
+    }
+    #Story .container .part2 .item .top-image::before {
+    top: 0px;
+    }
+    #Story .container .part2 .item .main-image {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+#Story .container .part2 .item .bottom-image {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+    z-index: 2;
+}
+
+#specialDish .container-fluid .part1 
+{
+    height: 100vh;
+}
+#specialDish .container-fluid .part1 .item {
+    
+    width: 100%;
+    }
+#specialDish .container-fluid .part2 {
+   
+    padding-left: 0;
+}
+#specialDish .container-fluid .part2 .badgeMark {
+    top: 35px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#specialDish .container-fluid .part2 h2 {
+    font-size: 40px;
+}
+#specialDish .container-fluid .part2 .content .main {
+    text-align: justify;
+    line-height: 2rem;
+    font-size: 15px;
+}
+
+#Menu  .container .head .content ul 
+{
+    flex-wrap: nowrap;
+    overflow: auto;
+    scrollbar-width: none;
+    ul::-webkit-scrollbar {
+        display: none;
+    }
+}
+#BreakFast-content .content .header h5 {
+    font-size: 20px;
+}
+#Menu .container .body .row .part .content .header {
+    display: block;
+    text-align: start;
+}
+#Menu .container .body .row .part .box .headImage {
+    position: relative;
+    max-width: 110px;
+    width: 70%;
+    height: 87px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#Menu .container .body .row .part .content .mainParagraph {
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+}
+
+#Chefs .container .content .row .item .row 
+{
+    padding: 0px 20px;
+}
+#Chefs .container .content .secondary .item p  
+{
+  margin-bottom: 40px;
+}
+#Chefs .container .content .photo {
+    border-radius: 10px;
+    max-width: 280px;
+}
+#Contact .container .content form .info .part p 
+{
+    font-size: 14px;
+}
+
+}
+
+
+/*450*/
+@media (min-width: 371px) and (max-width: 1300px) {
+      
+      .carousel-item .container .content h2, .carousel-item .container .content h3 {
+        font-size: 40px;
+    }
+    /* About Section  */
+        .container .content .head p {
+        width: 90%;
+    }
+    .container .content .row .part .item h4 {
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    }
+    /* Story Section  */
+    #Story .container .body h2 {
+        font-size: 35px;
+    }
+    #Story .container .body p:nth-of-type(1) {
+        width: 80%;
+    }
+    #Story .container .part2 .item .top-image {
+    width: 100px;
+    height: 100px;
+    top: -40px;
+    right: 65px;
+    }
+    #Story .container .part2 .item .bottom-image {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        bottom: -5px;
+        left: 35px;
+        z-index: 2;
+    }
+        #Chefs .container .content .row .item .row {
+        padding: 0px 20px;
+        max-width: 400px;
+        margin: auto;
+    }
+}
+
+/*650*/
+@media (min-width: 577px) and (max-width: 1300px) {
+    
+    .navbar-brand img {
+        width: 135px;
+    }
+    .offcanvas.offcanvas-start {
+        width: 400px;
+    }
+      #offcanvas .btn {
+        left: 85%;
+        right: 0%;
+    }
+    .carousel-item .container .content h2, .carousel-item .container .content h3 {
+        font-size: 50px;
+    }
+    .carousel-item .container .content p {
+        font-size: 14px;
+    }
+    .container .content .head p {
+        width: 80%;
+        margin: auto;
+    }
+    /* Story Section  */
+    #Story .container .body h2 {
+        font-size: 40px;
+    }
+
+    #Story .container .part2 .item .top-image {
+       
+        right: 100px;
+    }
+
+    #Story .container .part2 .item .bottom-image {
+        
+        left: 50px;
+    }
+
+    #Menu .container .head .content ul {
+       
+        justify-content: center;
+    }
+    #Menu .container .body .row .part .content .header {
+        display: flex;
+        text-align: start;
+    }
+    #Menu .container .body .row  .part .box:nth-of-type(1) .content .header .Hr hr
+    {
+        width: 140px;
+    }
+    #Menu .container .body .row  .part .box:nth-of-type(2) .content .header .Hr hr
+    {
+        width: 180px;
+    }
+    #Menu .container .body .row  .part .box:nth-of-type(3) .content .header .Hr hr
+    {
+        width: 150px;
+    }
+}
+
+/*850*/
+@media (min-width: 769px) and (max-width: 1300px) {
+    .navbar-brand img {
+        width: 150px;
+    }
+
+    .carousel-item .container .content h2, .carousel-item .container .content h3 {
+        font-size: 70px;
+    }
+
+    /* About Section  */
+    .container .content .head p {
+        width: 85%;
+        margin: auto;
+    }
+    #Story .container .body p:nth-of-type(1) {
+        width: 90%;
+    }
+    #Story .container .part2 .item .top-image {
+        right: -10px;
+    }
+    #Story .container .part2 .item .main-image {
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+    #Story .container .part2 .item .bottom-image {
+        left: -10px;
+    }
+    #Menu .container .body .row .part .box .item {
+    column-gap: 20px;
+    }
+    #Menu .container .body .row .part .content {
+    align-items: center;
+    justify-content: center;
+    }
+    #Menu .container .body .row .part .content .mainParagraph {
+    font-size: 14px;
+    width:80%;
+    text-align: left;
+    }
+    #Chefs .container .content .row .item .row {
+        padding: 0px;
+      
+    }
+    #Chefs .container .content .photo img {
+    transform: scale(1) skew(0deg);
+    transition-duration: 1s;
+    width: 100%;
+    }
+
+    #Chefs .container .content .secondary .item p {
+    font-size: 13px;
+    text-align: start;
+    color: #9C9C9C;
+    }
+
+
+
+}
+
+/*1050*/
+@media (min-width: 992px) and (max-width: 1300px) {
+      #offcanvas .btn {
+        left: 90%;
+        right: 0%;
+    }
+    .container .content .head h2 {
+        font-size: 50px;
+    }
+    .container .content .row .part1,
+    .container .content .row .part3
+     {
+        transform: translateY(-25px);
+    }
+    .container .content .row .part2 
+    {
+        transform: translateY(25px);
+    }
+    .container .content .head p {
+        width: 40%;
+    }
+    .container .content .row .part .item::after {
+   
+    left: -100%;
+    
+    }
+
+    #Story .container .part2 .item .top-image {
+        right: 10px;
+    }
+    #Story .container .part2 .item .main-image {
+        width: 400px;
+        height: 400px;
+        margin: auto;
+    }
+   #Story .container .part2 .item .bottom-image {
+        width: 200px;
+        height: 200px;
+        left: -10px;
+    }
+    #Menu .container .body .tab-pane .row .part1 
+    {
+        padding-right: 40px;
+    }
+    #Menu .container .body .row .part .box .headImage {
+        max-width: 95px;
+        width: 70%;
+    }
+    #Menu .container .body .row  .part .box:nth-of-type(1) .content .header .Hr hr
+    {
+        width:95px;
+    }
+    #Menu .container .body .row  .part .box:nth-of-type(2) .content .header .Hr hr
+    {
+        width: 150px;
+    }
+    #Menu .container .body .row  .part .box:nth-of-type(3) .content .header .Hr hr
+    {
+        width: 135px;
+    }
+    #BreakFast-content .content .header h5 {
+        font-size: 19px;
+    }
+    #Menu .container .body .row .part .content .mainParagraph {
+        font-size: 14px;
+        width: 95%;
+        text-align: left;
+    }
+    #Lunch-content .content .header h5 {
+    font-size: 20px;
+    }
+
+}
+
+/*1250*/
+@media (min-width: 1181px) and (max-width: 1300px) {
+  
+}
