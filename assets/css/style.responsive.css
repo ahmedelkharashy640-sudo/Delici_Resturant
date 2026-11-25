@@ -13,34 +13,38 @@
     width: 300px;
     
     }
-    .carousel-item .container .title img {
+   
+    #Home .carousel-item .container .title img {
     width: 35%;
     }
-    .carousel-item .container .title h6 {
+    #Home .carousel-item .container .title h6 {
     font-weight: lighter;
     letter-spacing: 1px;
     }
-    .carousel-item .container .content h2 
+    #Home .carousel-item .container .content h2 
     {
         margin-bottom: 0;
     }
-    .carousel-item .container .content h2, .carousel-item .container .content h3 {
-    font-size: 30px;
+    #Home .carousel-item .container .content h2, #Home .carousel-item .container .content h3 {
+    font-size: 40px;
     }
     
     .carousel-indicators {
     column-gap: 0px;
     }
-    .carousel-item .container .content p {
+    #Home .carousel-item .container .content p {
 
     font-size: 13px;
     margin-bottom: 40px;
     }
-    .carousel-item .container .content a {
+    #Home .carousel-item .container .content a {
 
     width: 170px;
     height: 50px;
     font-size: 14px;
+    }
+    .popup[data-popup-name="Book"] .box {
+        max-width: 340px;
     }
     .booking {
     bottom: 30px;
@@ -194,8 +198,11 @@
 /*450*/
 @media (min-width: 371px) and (max-width: 1300px) {
       
-      .carousel-item .container .content h2, .carousel-item .container .content h3 {
-        font-size: 40px;
+     #Home .carousel-item .container .content h2, #Home .carousel-item .container .content h3 {
+        font-size: 55px;
+    }
+        #Home .carousel-item .container .content p {
+        font-size: 16px;
     }
     /* About Section  */
         .container .content .head p {
@@ -231,6 +238,10 @@
         max-width: 400px;
         margin: auto;
     }
+
+     .popup[data-popup-name="Book"] .box {
+        max-width: 400px;
+    }
 }
 
 /*650*/
@@ -246,13 +257,13 @@
         left: 85%;
         right: 0%;
     }
-    .carousel-item .container .content h2, .carousel-item .container .content h3 {
-        font-size: 50px;
+   #Home .carousel-item .container .content h2, #Home  .carousel-item .container .content h3 {
+        font-size: 60px;
     }
-    .carousel-item .container .content p {
-        font-size: 14px;
+    #Home .carousel-item .container .content p {
+        font-size: 20px;
     }
-    .container .content .head p {
+   #Home .container .content .head p {
         width: 80%;
         margin: auto;
     }
@@ -291,6 +302,9 @@
     {
         width: 150px;
     }
+     .popup[data-popup-name="Book"] .box {
+        max-width: 450px;
+    }
 }
 
 /*850*/
@@ -299,7 +313,7 @@
         width: 150px;
     }
 
-    .carousel-item .container .content h2, .carousel-item .container .content h3 {
+   #Home .carousel-item .container .content h2, #Home .carousel-item .container .content h3 {
         font-size: 70px;
     }
 

@@ -346,7 +346,7 @@ color: var(--white-color);
 }
 .popup[data-popup-name="Book"] .box .part1 p 
 {
-    width: 73%;
+    max-width: 100%;
     margin: auto;
     text-align: center;
 
