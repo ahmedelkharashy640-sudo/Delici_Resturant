@@ -82,8 +82,8 @@
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/keyframes.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/Home.css">
     <link rel="stylesheet" href="./assets/css/About.css">
     <link rel="stylesheet" href="./assets/css/Story.css">
@@ -231,10 +231,12 @@
         </div>
     </div>
 
+<audio id="slideSound" src="./assets/Audio/cameraSound.mp3"></audio>
+
     <!-- Home Section  -->
     <header id="Home" class="position-relative vh-100">
         <!-- SC-Carousel  -->
-        <div id="carouselExampleIndicators" class="carousel slide h-100">
+        <div id="carouselExampleIndicators" class="carousel slide h-100" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -492,7 +494,7 @@
                 <div class="content">
                     <h2> Delicious Menu</h2>
                     <hr>
-                    <ul class="nav align-items-center column-gap-5">
+                    <ul class="nav align-items-center  column-gap-5">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" data-bs-toggle="pill" id="BreakFast-tab"
                                 data-bs-target="#BreakFast-content" ><span>BreakFast</span></a>
@@ -825,7 +827,20 @@
     </section>
 
 
-
+    <!-- Loading Page  -->
+    <div class="preloader">
+        <div class="loader">
+            <span></span>
+        </div>
+        <h2 class="loading-text">
+                <span>D</span>
+                <span>E</span>
+                <span>L</span>
+                <span>I</span>
+                <span>C</span>
+                <span>I</span>
+        </h2>
+    </div>
 
 
      <!-- popup Book  -->

@@ -146,7 +146,7 @@ return `
                                     <img src="./assets/images_delici/images/${item.images[0]}" class="img-fluid" alt="BF_image">
                                 </div>
                                 <p>
-                                  ${item.description}
+                                  ${item.description.trim().split(/\s+/, 200).join(" ")}
                                 </p>
 
                             </div>
@@ -183,7 +183,7 @@ function closePopup() {
   popupEle.classList.remove("show");
   setTimeout(function () {
     popupEle.classList.remove("active");
-  }, 100);
+  }, 400);
 }
 
 function cancelEditing()

@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--bs-menu-bg);
-  position: relative;
+    position: relative;
 }
 #Menu .bg-top,
 #Menu .bg-bottom
@@ -35,7 +35,7 @@
 }
 #Menu .bg-bottom
 {
-    bottom: -1000;
+    bottom: 0;
     right: 0;
     animation: move-block-down 2s linear infinite alternate;
     z-index: 1;
@@ -134,8 +134,9 @@
 #Menu .container .body .row .vertical-row 
 {
     position: absolute;
-    left: 48%;
+    left: 50%;
     height: 100%;
+    transform: translateX(-50px);
 }
 #Menu .container .body .row  .part .box .headImage 
 {

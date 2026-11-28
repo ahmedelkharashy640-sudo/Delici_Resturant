@@ -150,6 +150,7 @@
     flex-wrap: nowrap;
     overflow: auto;
     scrollbar-width: none;
+    justify-content: start;
     ul::-webkit-scrollbar {
         display: none;
     }
