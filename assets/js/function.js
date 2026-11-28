@@ -146,7 +146,7 @@ return `
                                     <img src="./assets/images_delici/images/${item.images[0]}" class="img-fluid" alt="BF_image">
                                 </div>
                                 <p>
-                                  ${item.description.trim().split(/\s+/, 200).join(" ")}
+                                  ${item.description.trim().split(/\s+/, 100).join(" ")}
                                 </p>
 
                             </div>

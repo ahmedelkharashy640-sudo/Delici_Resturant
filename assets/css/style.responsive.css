@@ -1,5 +1,8 @@
 /*350*/
 @media (max-width: 1300px) {
+    .loading-text {
+    font-size: 50px;
+     }
     .navbar-brand img
     {
             width: 125px;
@@ -198,6 +201,9 @@
 
 /*450*/
 @media (min-width: 371px) and (max-width: 1300px) {
+    .loading-text {
+    font-size: 60px;
+     }
       
      #Home .carousel-item .container .content h2, #Home .carousel-item .container .content h3 {
         font-size: 55px;
@@ -247,7 +253,9 @@
 
 /*650*/
 @media (min-width: 577px) and (max-width: 1300px) {
-    
+     .loading-text {
+    font-size: 80px;
+     }
     .navbar-brand img {
         width: 135px;
     }
@@ -310,6 +318,9 @@
 
 /*850*/
 @media (min-width: 769px) and (max-width: 1300px) {
+     .loading-text {
+    font-size: 100px;
+     }
     .navbar-brand img {
         width: 150px;
     }
@@ -371,6 +382,9 @@
 
 /*1050*/
 @media (min-width: 992px) and (max-width: 1300px) {
+     .loading-text {
+    font-size: 120px;
+     }
       #offcanvas .btn {
         left: 90%;
         right: 0%;
